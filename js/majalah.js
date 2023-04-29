@@ -325,7 +325,7 @@ daftarIsi("have fun", "28");
 daftarIsi("religi", "29");
 daftarIsi("lecture", "30");
 daftarIsi("the captains", "32");
-daftarIsi("pesta demokrasi", "34");
+daftarIsi("TTS SPEDUSA", "34");
 daftarIsi("winner corner", "36");
 
 function kembali() {
@@ -548,7 +548,7 @@ function share() {}
 function goWA() {
   const url = "https://api.whatsapp.com/send?text=";
   const message =
-    "Kunjungi Majalah Digital Spedusa: https://ilham12359.github.io/teorimajalah/";
+    "Kunjungi Majalah Digital Spedusa: https://spedusajurnalistik.github.io/MajalahDigital/";
   const encodedMessage = encodeURIComponent(message);
   const finalUrl = `${url}${encodedMessage}`;
   window.open(finalUrl, "_blank");
@@ -556,7 +556,7 @@ function goWA() {
 
 function goFB() {
   var quote =
-    "Kunjungi Majalah Digital Spedusa: https://ilham12359.github.io/teorimajalah/";
+    "Kunjungi Majalah Digital Spedusa: https://spedusajurnalistik.github.io/MajalahDigital/";
   var url =
     "https://www.facebook.com/sharer/sharer.php?u=" +
     encodeURIComponent(window.location.href) +
@@ -568,7 +568,7 @@ function goFB() {
 function goTELE() {
   const url = "https://t.me/share/url?url=";
   const message =
-    "Kunjungi Majalah Digital Spedusa: https://ilham12359.github.io/teorimajalah/";
+    "Kunjungi Majalah Digital Spedusa: https://spedusajurnalistik.github.io/MajalahDigital/";
   const encodedMessage = encodeURIComponent(message);
   const finalUrl = `${url}${encodedMessage}`;
   window.open(finalUrl, "_blank");
@@ -576,7 +576,7 @@ function goTELE() {
 
 function goGIT() {
   var message =
-    "Kunjungi Majalah Digital Spedusa: https://ilham12359.github.io/teorimajalah/";
+    "Kunjungi Majalah Digital Spedusa: https://spedusajurnalistik.github.io/MajalahDigital/";
   var url =
     "https://github.com/login?return_to=" +
     encodeURIComponent(window.location.href) +
@@ -586,7 +586,7 @@ function goGIT() {
 }
 
 function copyUrl() {
-  var url = "https://ilham12359.github.io/teorimajalah/";
+  var url = "https://spedusajurnalistik.github.io/MajalahDigital/";
   navigator.clipboard.writeText(url);
 }
 
