@@ -634,7 +634,10 @@ function zoom() {
     setTimeout(function(){
     SpawnPage();
     $("#loader").remove()
-    $('#canvas').show();;
+    $('#canvas').show();
+    $('#load1').removeClass('hidden')
+    $('#load2').removeClass('hidden')
+
     },1000)
   SwitchSound();
 
