@@ -630,17 +630,24 @@ function zoom() {
       $(".magazine-viewport").zoom("zoomOut");
     }
   }
+
+  $('#majalahdigital').hide()
   // Load
+  $('#canvas').show();
     setTimeout(function(){
     SpawnPage();
-    $("#loader").remove()
-    $('#canvas').show();
-    $('#load1').removeClass('hidden')
-    $('#load2').removeClass('hidden')
     $("#singlepage").click()
     ChangeToHardMode()
+    $('#load1').removeClass('hidden')
+    $('#load2').removeClass('hidden')
     $('#MoreOptions').hide()
-    },1500)
+    $("#loader").addClass('animate__animated animate__fadeOut')
+      setTimeout(function(){
+        $('#majalahdigital').show()
+        $('#loader').remove()
+      },800)
+    },1000)
+    
   SwitchSound();
 
   function backgroundShowHide(){
