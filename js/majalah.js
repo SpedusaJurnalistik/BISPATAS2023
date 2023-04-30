@@ -639,6 +639,7 @@ function zoom() {
     $('#load2').removeClass('hidden')
     $("#singlepage").click()
     ChangeToHardMode()
+    $('#MoreOptions').hide()
     },1500)
   SwitchSound();
 
