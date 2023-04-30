@@ -323,6 +323,10 @@
         $(img).appendTo(element);
         img.removeClass("loader");
       }
+      if(cekSingle){
+        $("#singlepage").click()
+      }
+    
       achmad = 6;
       zein = 5;
     }, 200);
@@ -342,8 +346,29 @@
         $(img).appendTo(element);
         img.removeClass("loader");
       }
+      if(cekSingle){
+        $("#singlepage").click()
+      }
       achmad = 6;
       zein = 5;
     }, 200);
   }
   
+  function defaultLoadPage() {
+    removePage();
+    setTimeout(function () {
+      hard = true;
+      let halamanLive = currentView();
+      for (let i = 1; i <= 4; i++) {
+        let img = $("<img class='loader' />");
+        let element = $("<div class='hard' />");
+        $("#majalahdigital").turn("addPage", element);
+        img.attr("src", "pages/webp/H_page-00" + i + ".webp");
+        $(img).css({ width: "100%", height: "100%" });
+        $(img).appendTo(element);
+        img.removeClass("loader");
+      }
+      achmad = 6;
+      zein = 5;
+    }, 200);
+  }

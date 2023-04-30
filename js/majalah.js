@@ -632,17 +632,19 @@ function zoom() {
   }
 
   $('#majalahdigital').hide()
+
   // Load
   $('#canvas').show();
     setTimeout(function(){
     SpawnPage();
     $("#singlepage").click()
-    ChangeToHardMode()
+    defaultLoadPage()
     $('#load1').removeClass('hidden')
     $('#load2').removeClass('hidden')
     $('#MoreOptions').hide()
     $("#loader").addClass('animate__animated animate__fadeOut')
       setTimeout(function(){
+       
         $('#majalahdigital').show()
         $('#loader').remove()
       },800)
