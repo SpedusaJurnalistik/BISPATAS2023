@@ -659,7 +659,7 @@ function zoom() {
 
   // Background Change
   function backgroundChange(n){
-    $('#canvas').css('background-image', 'url("./css/bg/'+n+".png")
+    $('#canvas').css('background-image', 'url("./css/bg/'+n+".jpg")
     $('#canvas').css('background-position', 'center')
     $('#backgroundContent').addClass('hidden')
   }
