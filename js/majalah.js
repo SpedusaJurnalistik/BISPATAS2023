@@ -9,7 +9,7 @@ let view = function () {
   return $(".magazine").turn("page");
 };
 let zoomSingleMark = false;
-let zoomScale = 2;
+let zoomScale = 4;
 let zoomMark = false;
 let hard = false;
 let zein = 5;
@@ -646,7 +646,7 @@ function zoom() {
         $('#majalahdigital').show()
         $('#loader').remove()
       },800)
-    },1000)
+    },1200)
     
   SwitchSound();
 
