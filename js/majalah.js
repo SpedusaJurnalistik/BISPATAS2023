@@ -637,8 +637,9 @@ function zoom() {
     $('#canvas').show();
     $('#load1').removeClass('hidden')
     $('#load2').removeClass('hidden')
-
-    },1000)
+    $("#singlepage").click()
+    ChangeToHardMode()
+    },1500)
   SwitchSound();
 
   function backgroundShowHide(){
