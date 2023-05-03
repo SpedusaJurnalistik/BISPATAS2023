@@ -4,6 +4,11 @@ $("#FlipMode").hide();
 $("#daftarisi").hide();
 $("#canvas").hide();
 
+setTimeout(function(){
+  if(doneLoad==false){
+    location.reload()
+  }
+},3000)
 
 let view = function () {
   return $(".magazine").turn("page");
@@ -651,11 +656,7 @@ function zoom() {
       },800)
     },1200)
     
-setTimeout(function(){
-  if(doneLoad==false){
-    location.reload()
-  }
-},3000)
+
 
   SwitchSound();
 
