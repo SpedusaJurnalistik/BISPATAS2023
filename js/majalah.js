@@ -19,6 +19,7 @@ let tanda = 0;
 let audio1 = document.getElementById("audioPlayer");
 let valueRange = $("#myrange").value;
 $("#MoreOptions").hide();
+let doneLoad=false
 
 
 function cekMore() {
@@ -642,14 +643,20 @@ function zoom() {
     $('#load1').removeClass('hidden')
     $('#load2').removeClass('hidden')
     $('#MoreOptions').hide()
+    doneLoad=true
     $("#loader").addClass('animate__animated animate__fadeOut')
       setTimeout(function(){
-       
         $('#majalahdigital').show()
         $('#loader').remove()
       },800)
     },1200)
     
+setTimeout(function(){
+  if(doneLoad==false){
+    location.reload()
+  }
+},3000)
+
   SwitchSound();
 
   function backgroundShowHide(){
