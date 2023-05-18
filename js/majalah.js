@@ -24,7 +24,8 @@ let tanda = 0;
 let audio1 = document.getElementById("audioPlayer");
 let valueRange = $("#myrange").value;
 $("#MoreOptions").hide();
-let doneLoad=false
+let doneLoad = false
+let fitri = true
 
 
 function cekMore() {
@@ -674,6 +675,15 @@ function zoom() {
     $('#backgroundContent').addClass('hidden')
   }
 
+
+
+
+
+  $('.toggleHideNav').click(function(){
+    $("#navbar").toggleClass("-translate-y-[75px]");
+  })
+
+    
   
 
 
