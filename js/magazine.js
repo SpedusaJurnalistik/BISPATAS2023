@@ -322,14 +322,18 @@
         $(img).css({ width: "100%", height: "100%" });
         $(img).appendTo(element);
         img.removeClass("loader");
+        
       }
       if(cekSingle){
+       
         $("#singlepage").click()
+        $(".magazine").turn("page", 1)
+        $('#MoreOptions').hide()
       }
     
       achmad = 6;
       zein = 5;
-    }, 200);
+    }, 500);
   }
   
   function ChangeToHardMode() {
@@ -345,13 +349,16 @@
         $(img).css({ width: "100%", height: "100%" });
         $(img).appendTo(element);
         img.removeClass("loader");
+        
       }
       if(cekSingle){
         $("#singlepage").click()
+          $(".magazine").turn("page", 1)
+          $('#MoreOptions').hide()
       }
       achmad = 6;
       zein = 5;
-    }, 200);
+    }, 500);
   }
   
   function defaultLoadPage() {
