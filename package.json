@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devm": "tailwindcss -i ./css/tailwind.css -o ./css/style.css --minify",
-    "devw": "tailwindcss -i ./css/tailwind.css -o ./css/style.css --watch"
+    "devm": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css --minify",
+    "devw": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css --watch"
   },
   "author": "",
   "license": "ISC",

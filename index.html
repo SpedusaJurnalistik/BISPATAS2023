@@ -5,11 +5,11 @@
   <title>FlipBook Jurnalistik Spedusa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/magazine.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/magazine.css">
   <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-  <script type="text/javascript" src="./extras/jquery.min.1.7.js"></script>
-  <script type="text/javascript" src="./extras/modernizr.2.5.3.min.js"></script>
+  <script type="text/javascript" src="./assets/extras/jquery.min.1.7.js"></script>
+  <script type="text/javascript" src="./assets/extras/modernizr.2.5.3.min.js"></script>
 </head>
 
 <body>
@@ -46,7 +46,7 @@
   </div>
 
   <audio id="audioPlayer">
-    <source src="./sound/start-flip.mp3" type="audio/mpeg" />
+    <source src="./assets/sound/start-flip.mp3" type="audio/mpeg" />
   </audio>
 
   <div id="canvas"
@@ -55,10 +55,10 @@
 <!-- Change Background Content -->
 <div id="backgroundContent" class="absolute flex justify-center items-center w-full h-full z-[1000] lg:z-10 hidden">
   <div class="bg-white/90 grid grid-cols-2 gap-3 w-[90%] h-[40%] xl:w-[40%] xl:h-[40%] shadow-2xl rounded-lg pt-10">
-<img onclick="backgroundChange(1)" class="h-[70%] w-[80%] mx-auto cursor-pointer" src="./css/bg/1.jpg" alt="">
-<img onclick="backgroundChange(2)" class="h-[70%] w-[80%] mx-auto cursor-pointer" src="./css/bg/2.jpg" alt="">
-<img onclick="backgroundChange(3)" class="h-[70%] w-[80%] mx-auto cursor-pointer" src="./css/bg/3.jpg" alt="">
-<img onclick="backgroundChange(4)" class="h-[70%] w-[80%] mx-auto cursor-pointer" src="./css/bg/4.jpg" alt="">
+<img onclick="backgroundChange(1)" class="h-[70%] w-[80%] mx-auto cursor-pointer" src="./assets/css/bg/1.jpg" alt="">
+<img onclick="backgroundChange(2)" class="h-[70%] w-[80%] mx-auto cursor-pointer" src="./assets/css/bg/2.jpg" alt="">
+<img onclick="backgroundChange(3)" class="h-[70%] w-[80%] mx-auto cursor-pointer" src="./assets/css/bg/3.jpg" alt="">
+<img onclick="backgroundChange(4)" class="h-[70%] w-[80%] mx-auto cursor-pointer" src="./assets/css/bg/4.jpg" alt="">
   </div>
 </div>
 
@@ -136,7 +136,7 @@
 
             <div class="cursor-pointer" onclick="SwitchSound()">
               <div class="flex justify-center items-center">
-                <img src="./img/suara.png" class="h-12" id="iconSound" alt="" />
+                <img src="./assets/img/suara.png" class="h-12" id="iconSound" alt="" />
               </div>
 
               <div class="text-center mt-[6px]">Suara Flip</div>
@@ -144,7 +144,7 @@
 
             <div class="cursor-pointer" onclick="$('#share').show()">
               <div class="flex justify-center items-center">
-                <img src="./img/share.png" class="h-12" id="iconShare" alt="" />
+                <img src="./assets/img/share.png" class="h-12" id="iconShare" alt="" />
               </div>
 
               <div class="text-center mt-[6px]">Bagikan</div>
@@ -198,22 +198,22 @@
   
         <div class="flex justify-around mt-4 mx-2">
           <div onclick="goWA()" class="scale-75 cursor-pointer md:scale-100">
-            <img class="mx-auto" src="./img/wa.png" alt="">
+            <img class="mx-auto" src="./assets//img/wa.png" alt="">
             <h1 class="text-center">WhatsApp</h1>
           </div>
   
           <div onclick="goFB()" class="scale-75 cursor-pointer md:scale-100">
-            <img class="mx-auto" src="./img/fb.png" alt="">
+            <img class="mx-auto" src="./assets/img/fb.png" alt="">
             <h1 class="text-center">Facebook</h1>
           </div>
   
           <div onclick="goTELE()" class="scale-75 cursor-pointer md:scale-100">
-            <img class="mx-auto" src="./img/tele.png" alt="">
+            <img class="mx-auto" src="./assets/img/tele.png" alt="">
             <h1 class="text-center">Telegram</h1>
           </div>
   
           <div onclick="goGIT()" class="scale-75 cursor-pointer md:scale-100">
-            <img class="mx-auto" src="./img/git.png" alt="">
+            <img class="mx-auto" src="./assets/img/git.png" alt="">
             <h1 class="text-center">GitHub</h1>
           </div>
   
@@ -223,7 +223,7 @@
   
         <div class="w-fit mt-4 px-2 py-2 bg-gray-100 mx-auto rounded-lg">
           <h1 class="inline text-[12px]">https://spedusajurnalistik.github.io/MajalahDigital/</h1>
-          <img onclick="copyUrl()" class="active:scale-90 inline ml-1 cursor-pointer" src="./img/copy.png" alt="">
+          <img onclick="copyUrl()" class="active:scale-90 inline ml-1 cursor-pointer" src="./assets/img/copy.png" alt="">
         </div>
   
       </div>
@@ -238,13 +238,13 @@
       </div>
     </div>
     
-    <div id="lanjut" class="rounded-full bg-white/50 lg:hidden right-10 bor der w-fit h-fit absolute top-[85vh] z-[9]">
-      <img src="./img/next.png" class="h-14 rounded-full hover:scale-110 transition-all duration-300 active:scale-90"
+    <div id="lanjut" class="rounded-full bg-white/50 lg:hidden right-10 w-fit h-fit absolute bottom-[10%] z-[9]">
+      <img src="./assets/img/next.png" class="h-14 rounded-full hover:scale-110 transition-all duration-300 active:scale-90"
         alt="" />
     </div>
 
-    <div id="kembali" class="rounded-full bg-white/50 lg:hidden left-10 bor der w-fit h-fit absolute top-[85vh] z-[9]">
-      <img src="./img/prev.png" class="h-14 hover:scale-110 transition-all duration-300 active:scale-90" alt="" />
+    <div id="kembali" class="rounded-full bg-white/50 lg:hidden left-10  w-fit bottom-[10%] h-fit absolute z-[9]">
+      <img src="./assets/img/prev.png" class="h-14 hover:scale-110 transition-all duration-300 active:scale-90" alt="" />
     </div>
 
     <div  id="box" class="magazine-viewport toggleHideNav">
@@ -265,7 +265,7 @@
 
   <!-- import JS -->
   
-  <script src="./js/majalah.js" type="text/javascript"></script>
+  <script src="./assets/js/majalah.js" type="text/javascript"></script>
   
   
 </body>

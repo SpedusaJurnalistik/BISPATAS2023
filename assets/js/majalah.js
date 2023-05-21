@@ -502,8 +502,8 @@ resizeViewport();
 
   yepnope({
     test: Modernizr.csstransforms,
-    yep: ["./lib/turn.js"],
-    both: ["./lib/zoom.min.js", "js/magazine.js", "css/magazine.css"],
+    yep: ["./assets/lib/turn.js"],
+    both: ["./assets/lib/zoom.min.js", "assets/js/magazine.js", "/assets/css/magazine.css"],
     complete: loadApp,
   });
 
@@ -619,10 +619,10 @@ function zoom() {
   function SwitchSound() {
     cekSound = !cekSound;
     if (cekSound) {
-      $("#iconSound").attr("src", "./img/soundOn.png");
+      $("#iconSound").attr("src", "./assets/img/soundOn.png");
     } else {
       $("#loader").removeClass("hidden");
-      $("#iconSound").attr("src", "./img/suara.png");
+      $("#iconSound").attr("src", "./assets/img/suara.png");
       $("#iconSound").load(function () {
         $("#loader").addClass("hidden");
       });
@@ -670,7 +670,7 @@ function zoom() {
 
   // Background Change
   function backgroundChange(n){
-    $('#canvas').css('background-image', 'url("./css/bg/'+n+".jpg")
+    $('#canvas').css('background-image', 'url("./assets/css/bg/'+n+".jpg")
     $('#canvas').css('background-position', 'center')
     $('#backgroundContent').addClass('hidden')
   }
