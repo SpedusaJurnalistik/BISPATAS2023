@@ -123,8 +123,8 @@ function loadApp() {
             let element2 = $("<div class='hard' />");
             $("#majalahdigital").turn("addPage", element);
             $("#majalahdigital").turn("addPage", element2);
-            img.attr("src", "pages/webp/" + namaHalaman + zein + formatPage);
-            img2.attr("src", "pages/webp/" + namaHalaman + achmad + formatPage);
+            img.attr("src", "pages/" + namaHalaman + zein + formatPage);
+            img2.attr("src", "pages/" + namaHalaman + achmad + formatPage);
             $(img).css({ width: "100%", height: "100%" });
             $(img2).css({ width: "100%", height: "100%" });
             $(img).appendTo(element);
@@ -142,8 +142,8 @@ function loadApp() {
             let element2 = $("<div />");
             $("#majalahdigital").turn("addPage", element);
             $("#majalahdigital").turn("addPage", element2);
-            img.attr("src", "pages/webp/" + namaHalaman + zein + formatPage);
-            img2.attr("src", "pages/webp/" + namaHalaman + achmad + formatPage);
+            img.attr("src", "pages/" + namaHalaman + zein + formatPage);
+            img2.attr("src", "pages/" + namaHalaman + achmad + formatPage);
             $(img).css({ width: "100%", height: "100%" });
             $(img2).css({ width: "100%", height: "100%" });
             $(img).appendTo(element);
@@ -215,8 +215,8 @@ function loadApp() {
             let element2 = $("<div class='hard' />");
             $("#majalahdigital").turn("addPage", element);
             $("#majalahdigital").turn("addPage", element2);
-            img.attr("src", "pages/webp/" + namaHalaman + currentPage + formatPage);
-            img2.attr("src", "pages/webp/" + namaHalaman + achmad + formatPage);
+            img.attr("src", "pages/" + namaHalaman + currentPage + formatPage);
+            img2.attr("src", "pages/" + namaHalaman + achmad + formatPage);
             $(img).css({ width: "100%", height: "100%" });
             $(img2).css({ width: "100%", height: "100%" });
             $(img).appendTo(element);
@@ -234,8 +234,8 @@ function loadApp() {
             let element2 = $("<div class='hard' />");
             $("#majalahdigital").turn("addPage", element);
             $("#majalahdigital").turn("addPage", element2);
-            img.attr("src", "pages/webp/" + namaHalaman + currentPage + formatPage);
-            img2.attr("src", "pages/webp/" + namaHalaman + achmad + formatPage);
+            img.attr("src", "pages/" + namaHalaman + currentPage + formatPage);
+            img2.attr("src", "pages/" + namaHalaman + achmad + formatPage);
             $(img).css({ width: "100%", height: "100%" });
             $(img2).css({ width: "100%", height: "100%" });
             $(img).appendTo(element);
@@ -255,8 +255,8 @@ function loadApp() {
             let element2 = $("<div />");
             $("#majalahdigital").turn("addPage", element);
             $("#majalahdigital").turn("addPage", element2);
-            img.attr("src", "pages/webp/" + namaHalaman + currentPage + formatPage);
-            img2.attr("src", "pages/webp/" + namaHalaman + achmad + formatPage);
+            img.attr("src", "pages/" + namaHalaman + currentPage + formatPage);
+            img2.attr("src", "pages/" + namaHalaman + achmad + formatPage);
             $(img).css({ width: "100%", height: "100%" });
             $(img2).css({ width: "100%", height: "100%" });
             $(img).appendTo(element);
@@ -274,8 +274,8 @@ function loadApp() {
             let element2 = $("<div />");
             $("#majalahdigital").turn("addPage", element);
             $("#majalahdigital").turn("addPage", element2);
-            img.attr("src", "pages/webp/" + namaHalaman + currentPage + formatPage);
-            img2.attr("src", "pages/webp/" + namaHalaman + achmad + formatPage);
+            img.attr("src", "pages/" + namaHalaman + currentPage + formatPage);
+            img2.attr("src", "pages/" + namaHalaman + achmad + formatPage);
             $(img).css({ width: "100%", height: "100%" });
             $(img2).css({ width: "100%", height: "100%" });
             $(img).appendTo(element);

@@ -290,7 +290,7 @@
       let img = $("<img class='loader' />");
       let element = $("<div />");
       $("#majalahdigital").turn("addPage", element);
-      img.attr("src", "pages/webp/" + namaHalaman + i + formatPage);
+      img.attr("src", "pages/" + namaHalaman + i + formatPage);
       $(img).css({ width: "100%", height: "100%" });
       $(img).appendTo(element);
       img.removeClass("loader");
@@ -318,7 +318,7 @@
         let img = $("<img class='loader' />");
         let element = $("<div />");
         $("#majalahdigital").turn("addPage", element);
-        img.attr("src", "pages/webp/" + namaHalaman + i + formatPage);
+        img.attr("src", "pages/" + namaHalaman + i + formatPage);
         $(img).css({ width: "100%", height: "100%" });
         $(img).appendTo(element);
         img.removeClass("loader");
@@ -345,7 +345,7 @@
         let img = $("<img class='loader' />");
         let element = $("<div class='hard' />");
         $("#majalahdigital").turn("addPage", element);
-        img.attr("src", "pages/webp/" + namaHalaman + i + formatPage);
+        img.attr("src", "pages/" + namaHalaman + i + formatPage);
         $(img).css({ width: "100%", height: "100%" });
         $(img).appendTo(element);
         img.removeClass("loader");
@@ -370,7 +370,7 @@
         let img = $("<img class='loader' />");
         let element = $("<div class='hard' />");
         $("#majalahdigital").turn("addPage", element);
-        img.attr("src", "pages/webp/" + namaHalaman + i + formatPage);
+        img.attr("src", "pages/" + namaHalaman + i + formatPage);
         $(img).css({ width: "100%", height: "100%" });
         $(img).appendTo(element);
         img.removeClass("loader");
